@@ -1,0 +1,82 @@
+#intro {
+    height: calc(100vh -100px);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    top: -4rem;
+    right: 0;
+    /* right: -5rem; */
+    object-fit: cover;
+    height: 100vh;
+    
+    
+}
+
+.introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hey {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName {
+    color: gold;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 100;
+}
+
+.btn {
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    
+}
+
+.resume {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    margin-bottom: 0.25rem;
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.social {
+    display: flex;
+    margin-top: 2rem;
+    font-size: 80%;
+    font-weight: 100;
+}
+
+.socialItem {
+    padding: 0 2px;
+}
+
+.resumeDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
