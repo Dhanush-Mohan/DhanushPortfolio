@@ -1,10 +1,13 @@
 #intro {
     height: calc(100vh -100px);
+    min-height: 100vh;
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -43,7 +46,8 @@
 
 .introPara {
     font-size: medium;
-    font-weight: 100;
+    font-weight:300;
+    letter-spacing: 1px;
 }
 
 .btn {
@@ -58,7 +62,7 @@
 .resume {
     object-fit: cover;
     margin: 0 0.25rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
     height: 1.2rem;
     width: 1.2rem;
 }
@@ -79,4 +83,33 @@
     align-items: center;
     justify-content: center;
     font-size: large;
+}
+
+@media screen and (max-width:840px) {
+    .bg {
+        right: -10vw;
+    }
+    
+    .introContent {
+        font-size: 10vw;
+    }
+
+    .hey {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .bg {
+        right: -20vw;
+    }
+
+    .introContent {
+        font-size: 8vw;
+    }
+
+    .hey {
+        font-size: 3vw;
+    }
+    
 }
