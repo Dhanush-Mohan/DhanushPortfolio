@@ -31,7 +31,7 @@
 
 .skills__content-wrapper__inner-content__category-text {
     display: inline-block;
-    color: gold;
+    color: #FFF2D8;
     font-size: 22px;
     font-weight: 700;
     line-height: 1rem;
@@ -39,7 +39,7 @@
     position: relative;
     text-transform: uppercase;
     padding: 5px;
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid #FFF2D8;
     
 }
 
@@ -48,7 +48,7 @@
     content: '';
     width: 2px;
     height: 5px;
-    background-color: gold;
+    background-color:#FFF2D8;
     bottom: -1px;
 }
 
