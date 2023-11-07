@@ -2,9 +2,9 @@ import { FiFileText, FiCode, FiExternalLink, FiGlobe} from 'react-icons/fi';
 import Work1 from '../../assets/p1.png';
 import Work2 from '../../assets/p2.png';
 import Work3 from '../../assets/p3.png';
-import Work4 from '../../assets/p1.png';
-import Work5 from '../../assets/p2.png';
-import Work6 from '../../assets/p3.png';
+import Work4 from '../../assets/p4.png';
+import Work5 from '../../assets/p5.png';
+import Work6 from '../../assets/p6.png';
 export const project = [
     {
         id: 1,
