@@ -1,5 +1,4 @@
-import React from "react";
-import { expData } from "./utils";
+import React from 'react'
 import styled from "styled-components";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
@@ -7,7 +6,9 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import ExperienceCard from "../Cards/ExperienceCard";
+import { education } from './utils';
+import EducationCard from '../Cards/EducationCard';
+
 
 const TimeLineSection = styled.div`
   width: 100%;
@@ -28,26 +29,27 @@ const ExpTitle = styled.div`
   align-items: center;
 `;
 
-const Experience = () => {
+const Education = () => {
   return (
-    <section id="exp" className="exp">
+    <section id="edu" className="exp">
       <ExpTitle>
-        <span className="expTitle">Experience</span>
+        <span className="expTitle">Education</span>
       </ExpTitle>
 
       <TimeLineSection>
         <Timeline>
-          {expData.map((experience, index) => (
+          {education.map((education, index) => (
             <TimelineItem>
+              
+              <TimelineContent>
+                <EducationCard education={education}></EducationCard>
+              </TimelineContent>
               <TimelineSeparator>
                 <TimelineDot variant="outlined" color="secondary"></TimelineDot>
-                {index !== expData.length - 1 && (
-                  <TimelineConnector></TimelineConnector>
+                {index !== education.length - 1 && (
+                  <TimelineConnector style={{background: "white"}}></TimelineConnector>
                 )}
               </TimelineSeparator>
-              <TimelineContent>
-                <ExperienceCard experience={experience}></ExperienceCard>
-              </TimelineContent>
             </TimelineItem>
           ))}
         </Timeline>
@@ -56,7 +58,7 @@ const Experience = () => {
       <br></br>
       <br></br>
     </section>
-  );
-};
+  )
+}
 
-export default Experience;
+export default Education
