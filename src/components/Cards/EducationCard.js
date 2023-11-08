@@ -150,7 +150,7 @@ const EducationCard = ({ education }) => {
       <Description>
         <Span>{education.desc}</Span>
       </Description>
-      {/* {experience.doc && <a href={experience.doc} target='new'><Document src={experience.doc}></Document></a>} */}
+      {/* {education.doc && <a href={education.doc} target='new'><Document src={education.doc}></Document></a>} */}
     </Card>
   );
 };
