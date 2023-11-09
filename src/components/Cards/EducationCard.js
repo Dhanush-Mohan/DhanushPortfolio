@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Document = styled.img`
-  display:none;
+  display: none;
   height: 70px;
   width: fit-content;
   background-color: #000;
@@ -34,7 +34,7 @@ const Card = styled.div`
     transform: translateY(-5px);
   }
 
-  &:hover ${Document}{
+  &:hover ${Document} {
     display: flex;
   }
 
@@ -113,7 +113,6 @@ const Description = styled.div`
   }
 `;
 
-
 const Span = styled.span`
   overflow: hidden;
   display: -webkit-box;
@@ -133,8 +132,6 @@ const Grade = styled.div`
   }
 `;
 
-
-
 const EducationCard = ({ education }) => {
   return (
     <Card>
@@ -144,9 +141,10 @@ const EducationCard = ({ education }) => {
           <Name>{education.school}</Name>
           <Degree>{education.degree}</Degree>
           <Date>{education.date}</Date>
+          <Grade>Grade: {education.grade}</Grade>
+          <br/>
         </Body>
       </Top>
-      <Grade>Grade: {education.grade}</Grade>
       <Description>
         <Span>{education.desc}</Span>
       </Description>

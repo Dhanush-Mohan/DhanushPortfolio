@@ -52,4 +52,10 @@
     padding: 0 1rem;
     padding-left: 0.2rem;
     border-radius: 2rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.desktopMenuBtn:hover {
+    background-color: gold;
 }

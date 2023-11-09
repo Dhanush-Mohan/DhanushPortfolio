@@ -6,7 +6,7 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import { education } from './utils';
+import { educations } from './utils';
 import EducationCard from '../Cards/EducationCard';
 
 
@@ -38,7 +38,7 @@ const Education = () => {
 
       <TimeLineSection>
         <Timeline>
-          {education.map((education, index) => (
+          {educations.map((education, index) => (
             <TimelineItem>
               
               <TimelineContent>
@@ -46,7 +46,7 @@ const Education = () => {
               </TimelineContent>
               <TimelineSeparator>
                 <TimelineDot variant="outlined" color="secondary"></TimelineDot>
-                {index !== education.length - 1 && (
+                {index !== educations.length - 1 && (
                   <TimelineConnector style={{background: "white"}}></TimelineConnector>
                 )}
               </TimelineSeparator>

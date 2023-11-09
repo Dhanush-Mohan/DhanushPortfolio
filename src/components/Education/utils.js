@@ -1,4 +1,4 @@
-export const education = [
+export const educations = [
   {
     id: 0,
     img: "https://media.licdn.com/dms/image/C4D0BAQGgTYgPZiPkaA/company-logo_200_200/0/1519933404766?e=1707350400&v=beta&t=Vtp8vX-eT4-7OKn9IdEIoMecfXtx-CaroTvAgKcNOtA",
