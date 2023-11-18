@@ -14,7 +14,7 @@ export const project = [
             {
                 icon: <FiFileText/>,
                 title: 'Project : ',
-                desc: 'Photo'
+                desc: 'Personal'
             },
             {
                 icon: <FiGlobe/>,
@@ -44,7 +44,7 @@ export const project = [
             {
                 icon: <FiFileText/>,
                 title: 'Project : ',
-                desc: 'Photo'
+                desc: 'Wipro Internship'
             },
             {
                 icon: <FiGlobe/>,
@@ -74,7 +74,7 @@ export const project = [
             {
                 icon: <FiFileText/>,
                 title: 'Project : ',
-                desc: 'Photo'
+                desc: 'Wipro Internship'
             },
             {
                 icon: <FiGlobe/>,
@@ -104,7 +104,7 @@ export const project = [
             {
                 icon: <FiFileText/>,
                 title: 'Project : ',
-                desc: 'Photo'
+                desc: 'Personal'
             },
             {
                 icon: <FiGlobe/>,
@@ -134,7 +134,7 @@ export const project = [
             {
                 icon: <FiFileText/>,
                 title: 'Project : ',
-                desc: 'Photo'
+                desc: 'Personal'
             },
             {
                 icon: <FiGlobe/>,
@@ -164,7 +164,7 @@ export const project = [
             {
                 icon: <FiFileText/>,
                 title: 'Project : ',
-                desc: 'Photo'
+                desc: 'Personal'
             },
             {
                 icon: <FiGlobe/>,

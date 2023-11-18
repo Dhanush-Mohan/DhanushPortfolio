@@ -24,7 +24,7 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           e.target.reset();
-          alert("Email Sent!")
+          alert("Email Sent!");
         },
         (error) => {
           console.log(error.text);
@@ -38,8 +38,18 @@ const Contact = () => {
         Fill in your details here. I'll get in touch with you very shortly.
       </span>
       <form className="contactForm" ref={form} onSubmit={sendEmail}>
-        <input type="text" className="name" placeholder="Enter your Name" name="from_name"/>
-        <input type="email" className="email" placeholder="Enter your Email" name="from_email" />
+        <input
+          type="text"
+          className="name"
+          placeholder="Enter your Name"
+          name="from_name"
+        />
+        <input
+          type="email"
+          className="email"
+          placeholder="Enter your Email"
+          name="from_email"
+        />
         <textarea
           name="message"
           rows="5"
@@ -50,11 +60,46 @@ const Contact = () => {
           Submit
         </button>
         <div className="links">
-          <img src={LinkedInIcon} alt="LinkedIn" className="link" />
-          <img src={GithubIcon} alt="GitHub" className="link" />
-          <img src={InstaIcon} alt="Instagram" className="link" />
-          <img src={WhatsAppIcon} alt="Whatsapp" className="link" />
-          <img src={GmailIcon} alt="Gmail" className="link" />
+          <a
+            href="https://www.linkedin.com/in/dhanush-mohan-62359a259/"
+            className="socialItem"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={LinkedInIcon} alt="LinkedIn" className="link" />
+          </a>
+          <a
+            href="https://github.com/Dhanush-Mohan"
+            className="socialItem"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={GithubIcon} alt="GitHub" className="link" />
+          </a>
+          <a
+            href="https://www.instagram.com/dhanush__mohan__/?hl=en"
+            className="socialItem"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={InstaIcon} alt="Instagram" className="link" />
+          </a>
+          <a
+            href="https://wa.me/918925187432"
+            className="socialItem"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={WhatsAppIcon} alt="Whatsapp" className="link" />
+          </a>
+          <a
+            href="mailto:dhanish4777@gmail.com"
+            className="socialItem"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={GmailIcon} alt="Gmail" className="link" />
+          </a>
         </div>
       </form>
     </section>

@@ -1,53 +1,66 @@
-import React, { useState } from 'react'
-import Close from '../../assets/close.png'
+import React, { useState } from "react";
+import Close from "../../assets/close.png";
 import "../Projects/projects.css";
 
-const ProjectCard = ({img, title, details}) => {
-    const [modal, setModal] = useState(false);
+const ProjectCard = ({ img, title, details }) => {
+  const [modal, setModal] = useState(false);
 
-    const toggleModal = () => {
-        setModal(!modal);
-    };
+  const toggleModal = () => {
+    setModal(!modal);
+  };
   return (
     <div className="project__item">
-        <img src={img} alt="" className="project__img" />
+      <img src={img} alt="" className="project__img" />
 
-        <div className="project__hover" onClick={toggleModal}>
-            <h3 className="project__title">{title}</h3>
+      <div className="project__hover" onClick={toggleModal}>
+        <h3 className="project__title">{title}</h3>
+      </div>
 
-        </div>
+      {modal && (
+        <div className="project__modal">
+          <div className="project__modal-content">
+            <img
+              src={Close}
+              alt=""
+              className="modal__close"
+              onClick={toggleModal}
+            />
 
-        {modal && (
-                    <div className="project__modal">
-                    <div className="project__modal-content">
-                        <img src={Close} alt="" className="modal__close" onClick={toggleModal}/>
-        
-                        <h3 className="modal__title">{title}</h3>
-        
-                        <ul className="modal__list grid">
-                            {details.map(({icon, title, desc}, index) => {
-                                return(
-                                    <li className="modal__item" key={index}>
-                                        <span className="item__icon">{icon}</span>
-        
-                                        <div>
-                                            <span className="item__title">{title}</span>
-                                            <span className="item__details">{desc}</span>
-                                        </div>
-                                    </li>
-                                );
-                            })}
-                        </ul>
-        
-                        <img src={img} alt="" className="modal__img" />
-        
+            <h3 className="modal__title">{title}</h3>
+
+            <ul className="modal__list grid">
+              {details.map(({ icon, title, desc }, index) => {
+                return (
+                  <li className="modal__item" key={index}>
+                    <span className="item__icon">{icon}</span>
+                    <div>
+                      <span className="item__title" style={{color: 'gold'}}>{title}</span>
+                      <span className="item__details">
+                        {index === 4 - 1 ? (
+                          <a
+                            href={desc}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ color: 'bisque' }}
+                          >
+                            {desc}
+                          </a>
+                        ) : (
+                          desc
+                        )}
+                      </span>
                     </div>
-                </div>
-        )}
+                  </li>
+                );
+              })}
+            </ul>
 
-
+            <img src={img} alt="" className="modal__img" />
+          </div>
+        </div>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;
